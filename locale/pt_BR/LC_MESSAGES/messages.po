@@ -1,0 +1,129 @@
+# Brazilian Portuguese translations for QA Test Report.
+# Copyright (C) 2025 QA Test Report
+# This file is distributed under the same license as the QA Test Report package.
+# FIRST AUTHOR <jaimeneto85@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: QA Test Report 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-19 12:00-0300\n"
+"PO-Revision-Date: 2025-02-19 12:00-0300\n"
+"Last-Translator: Jaime Lima Neto <jaimeneto85@gmail.com>\n"
+"Language-Team: pt_BR <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Language/Idioma"
+msgstr "Idioma/Language"
+
+msgid "Formulário de Validação QA"
+msgstr "Formulário de Validação QA"
+
+msgid "Etapa {}/7"
+msgstr "Etapa {}/7"
+
+msgid "Nome do Avaliador"
+msgstr "Nome do Avaliador"
+
+msgid "Nome do avaliador"
+msgstr "Nome do avaliador"
+
+msgid "Nome do Engenheiro"
+msgstr "Nome do Engenheiro"
+
+msgid "Nome do engenheiro responsável pela entrega"
+msgstr "Nome do engenheiro responsável pela entrega"
+
+msgid "Funcionalidade/Entrega"
+msgstr "Funcionalidade/Entrega"
+
+msgid "Qual funcionalidade ou entrega foi validada?"
+msgstr "Qual funcionalidade ou entrega foi validada?"
+
+msgid "Versão do Produto"
+msgstr "Versão do Produto"
+
+msgid "Versão do produto no pacote ou do release a ser lançado"
+msgstr "Versão do produto no pacote ou do release a ser lançado"
+
+msgid "Identificação da Tarefa"
+msgstr "Identificação da Tarefa"
+
+msgid "ID da Tarefa"
+msgstr "ID da Tarefa"
+
+msgid "Informações Básicas"
+msgstr "Informações Básicas"
+
+msgid "Próximo"
+msgstr "Próximo"
+
+msgid "Por favor, preencha todos os campos!"
+msgstr "Por favor, preencha todos os campos!"
+
+msgid "Parabéns!"
+msgstr "Parabéns!"
+
+msgid "Você completou o formulário de validação com sucesso!"
+msgstr "Você completou o formulário de validação com sucesso!"
+
+msgid "📥 Baixar Relatório PDF"
+msgstr "📥 Baixar Relatório PDF"
+
+msgid "✨ Novo Relatório"
+msgstr "✨ Novo Relatório"
+
+msgid "Formulário de Validação da Entrega – QA/Engenharia de Testes"
+msgstr "Formulário de Validação da Entrega – QA/Engenharia de Testes"
+
+msgid "Data da Avaliação"
+msgstr "Data da Avaliação"
+
+msgid "Conformidade com o Design UX/UI"
+msgstr "Conformidade com o Design UX/UI"
+
+msgid "Funcionalidade e Comportamento"
+msgstr "Funcionalidade e Comportamento"
+
+msgid "Qualidade do Código e Testabilidade"
+msgstr "Qualidade do Código e Testabilidade"
+
+msgid "Validações Extras"
+msgstr "Validações Extras"
+
+msgid "Critério"
+msgstr "Critério"
+
+msgid "Sim"
+msgstr "Sim"
+
+msgid "Não"
+msgstr "Não"
+
+msgid "Observações"
+msgstr "Observações"
+
+msgid "Feedback Geral"
+msgstr "Feedback Geral"
+
+msgid "Pontos Positivos: {}"
+msgstr "Pontos Positivos: {}"
+
+msgid "Pontos de Melhoria: {}"
+msgstr "Pontos de Melhoria: {}"
+
+msgid "Aprovado"
+msgstr "Aprovado"
+
+msgid "Reprovado – Necessita Ajustes"
+msgstr "Reprovado – Necessita Ajustes"
+
+msgid "Aprovação Final: ☑ {}"
+msgstr "Aprovação Final: ☑ {}"
+
+msgid "Assinatura do QA/Engenheiro de Testes: {}"
+msgstr "Assinatura do QA/Engenheiro de Testes: {}" 

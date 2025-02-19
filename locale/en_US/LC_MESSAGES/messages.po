@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <jaimeneto85@gmail.com>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: QA Test Report 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-19 12:00-0300\n"
+"PO-Revision-Date: 2025-02-19 13:03-0300\n"
+"Last-Translator: \n"
+"Language-Team: English <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+
+msgid "Language/Idioma"
+msgstr "Language"
+
+msgid "Formulário de Validação QA"
+msgstr "QA Validation Form"
+
+msgid "Etapa {}/7"
+msgstr "Stage {}/7"
+
+msgid "Nome do Avaliador"
+msgstr "Evaluator’s Name"
+
+msgid "Nome do avaliador"
+msgstr "Evaluator’s name"
+
+msgid "Nome do Engenheiro"
+msgstr "Engineer’s Name"
+
+msgid "Nome do engenheiro responsável pela entrega"
+msgstr "Name of the engineer responsible for the delivery"
+
+msgid "Funcionalidade/Entrega"
+msgstr "Functionality/Delivery"
+
+msgid "Qual funcionalidade ou entrega foi validada?"
+msgstr "Which feature or deliverable was validated?"
+
+msgid "Versão do Produto"
+msgstr "Product Version"
+
+msgid "Versão do produto no pacote ou do release a ser lançado"
+msgstr "Product version in the package or the release to be launched"
+
+msgid "Identificação da Tarefa"
+msgstr "Task Identification"
+
+msgid "ID da Tarefa"
+msgstr "Task ID"
+
+msgid "Informações Básicas"
+msgstr "Basic Information"
+
+msgid "Próximo"
+msgstr "Next"
+
+msgid "Por favor, preencha todos os campos!"
+msgstr "Please fill in all the fields!"
+
+msgid "Parabéns!"
+msgstr "Congratulations!"
+
+msgid "Você completou o formulário de validação com sucesso!"
+msgstr "You have successfully completed the validation form!"
+
+msgid "📥 Baixar Relatório PDF"
+msgstr "📥 Download PDF Report"
+
+msgid "✨ Novo Relatório"
+msgstr "✨ New Report"
+
+msgid "Formulário de Validação da Entrega – QA/Engenharia de Testes"
+msgstr "Delivery Validation Form - QA/Test Engineering"
+
+msgid "Data da Avaliação"
+msgstr "Evaluation Date"
+
+msgid "Conformidade com o Design UX/UI"
+msgstr "Compliance with UX/UI Design"
+
+msgid "Funcionalidade e Comportamento"
+msgstr "Functionality and Behavior"
+
+msgid "Qualidade do Código e Testabilidade"
+msgstr "Code Quality and Testability"
+
+msgid "Validações Extras"
+msgstr "Extra Validations"
+
+msgid "Critério"
+msgstr "Criterion"
+
+msgid "Sim"
+msgstr "Yes"
+
+msgid "Não"
+msgstr "No"
+
+msgid "Observações"
+msgstr "Comments"
+
+msgid "Feedback Geral"
+msgstr "General Feedback"
+
+msgid "Pontos Positivos: {}"
+msgstr "Positive Points: {}"
+
+msgid "Pontos de Melhoria: {}"
+msgstr "Areas for Improvement: {}"
+
+msgid "Aprovado"
+msgstr "Approved"
+
+msgid "Reprovado – Necessita Ajustes"
+msgstr "Failed - Needs Adjustments"
+
+msgid "Aprovação Final: ☑ {}"
+msgstr "Final Approval: ☑ {}"
+
+msgid "Assinatura do QA/Engenheiro de Testes: {}"
+msgstr "QA/Test Engineer Signature: {}"

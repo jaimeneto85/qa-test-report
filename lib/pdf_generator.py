@@ -3,6 +3,7 @@ from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from .form_data import QAFormData
+from .translations import _
 
 class PDFGenerator:
     def __init__(self, data: QAFormData):
@@ -19,7 +20,7 @@ class PDFGenerator:
         doc = SimpleDocTemplate(filename, pagesize=letter)
         elements = []
         
-        elements.append(Paragraph('Formulário de Validação da Entrega – QA/Engenharia de Testes', self.title_style))
+        elements.append(Paragraph(_('Formulário de Validação da Entrega – QA/Engenharia de Testes'), self.title_style))
         elements.extend(self._add_basic_info())
         elements.extend(self._add_sections())
         elements.extend(self._add_feedback())
@@ -31,12 +32,12 @@ class PDFGenerator:
         elements = []
         data_dict = self.data.to_dict()
         for key, value in {
-            'Data da Avaliação': data_dict["data_avaliacao"],
-            'Nome do Avaliador': data_dict["nome_avaliador"],
-            'Nome do Engenheiro': data_dict["nome_engenheiro"],
-            'Funcionalidade/Entrega': data_dict["funcionalidade"],
-            'Versão do Produto': data_dict["versao"],
-            'Identificação da Tarefa': data_dict["id_tarefa"]
+            _('Data da Avaliação'): data_dict["data_avaliacao"],
+            _('Nome do Avaliador'): data_dict["nome_avaliador"],
+            _('Nome do Engenheiro'): data_dict["nome_engenheiro"],
+            _('Funcionalidade/Entrega'): data_dict["funcionalidade"],
+            _('Versão do Produto'): data_dict["versao"],
+            _('Identificação da Tarefa'): data_dict["id_tarefa"]
         }.items():
             elements.append(Paragraph(f"{key}: {value}", self.styles['Normal']))
             elements.append(Spacer(1, 12))
@@ -45,10 +46,10 @@ class PDFGenerator:
     def _add_sections(self):
         elements = []
         sections = {
-            'Conformidade com o Design UX/UI': self.data.ux_ui,
-            'Funcionalidade e Comportamento': self.data.codigo,
-            'Qualidade do Código e Testabilidade': self.data.funcionalidade_respostas,
-            'Validações Extras': self.data.validacoes
+            _('Conformidade com o Design UX/UI'): self.data.ux_ui,
+            _('Funcionalidade e Comportamento'): self.data.codigo,
+            _('Qualidade do Código e Testabilidade'): self.data.funcionalidade_respostas,
+            _('Validações Extras'): self.data.validacoes
         }
         
         for title, section_data in sections.items():
@@ -60,10 +61,10 @@ class PDFGenerator:
         elements.append(Paragraph(title, self.styles['Heading2']))
         elements.append(Spacer(1, 12))
         
-        table_data = [['Critério', 'Sim', 'Não', 'Observações']]
+        table_data = [[_('Critério'), _('Sim'), _('Não'), _('Observações')]]
         for item in section_data:
             table_data.append([
-                item['criterio'],
+                _(item['criterio']),
                 '☑' if item['valor'] else '',
                 '☑' if not item['valor'] else '',
                 item['observacao']
@@ -94,11 +95,11 @@ class PDFGenerator:
 
     def _add_feedback(self):
         elements = []
-        elements.append(Paragraph('Feedback Geral', self.styles['Heading2']))
-        elements.append(Paragraph(f"Pontos Positivos: {self.data.pontos_positivos}", self.styles['Normal']))
-        elements.append(Paragraph(f"Pontos de Melhoria: {self.data.pontos_melhoria}", self.styles['Normal']))
+        elements.append(Paragraph(_('Feedback Geral'), self.styles['Heading2']))
+        elements.append(Paragraph(_("Pontos Positivos: {}").format(self.data.pontos_positivos), self.styles['Normal']))
+        elements.append(Paragraph(_("Pontos de Melhoria: {}").format(self.data.pontos_melhoria), self.styles['Normal']))
         
-        aprovacao = 'Aprovado' if self.data.aprovacao else 'Reprovado – Necessita Ajustes'
-        elements.append(Paragraph(f"Aprovação Final: ☑ {aprovacao}", self.styles['Normal']))
-        elements.append(Paragraph(f"Assinatura do QA/Engenheiro de Testes: {self.data.nome_avaliador}", self.styles['Normal']))
+        aprovacao = _('Aprovado') if self.data.aprovacao else _('Reprovado – Necessita Ajustes')
+        elements.append(Paragraph(_("Aprovação Final: ☑ {}").format(aprovacao), self.styles['Normal']))
+        elements.append(Paragraph(_("Assinatura do QA/Engenheiro de Testes: {}").format(self.data.nome_avaliador), self.styles['Normal']))
         return elements 

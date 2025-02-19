@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <jaimeneto85@gmail.com>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: QA Test Report 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-19 12:00-0300\n"
+"PO-Revision-Date: 2025-02-19 12:00-0300\n"
+"Last-Translator: Jaime Lima Neto <jaimeneto85@gmail.com>\n"
+"Language-Team: English <LL@li.org>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Language/Idioma"
+msgstr ""
+
+msgid "Formulário de Validação QA"
+msgstr ""
+
+msgid "Etapa {}/7"
+msgstr ""
+
+msgid "Nome do Avaliador"
+msgstr ""
+
+msgid "Nome do avaliador"
+msgstr ""
+
+msgid "Nome do Engenheiro"
+msgstr ""
+
+msgid "Nome do engenheiro responsável pela entrega"
+msgstr ""
+
+msgid "Funcionalidade/Entrega"
+msgstr ""
+
+msgid "Qual funcionalidade ou entrega foi validada?"
+msgstr ""
+
+msgid "Versão do Produto"
+msgstr ""
+
+msgid "Versão do produto no pacote ou do release a ser lançado"
+msgstr ""
+
+msgid "Identificação da Tarefa"
+msgstr ""
+
+msgid "ID da Tarefa"
+msgstr ""
+
+msgid "Informações Básicas"
+msgstr ""
+
+msgid "Próximo"
+msgstr ""
+
+msgid "Por favor, preencha todos os campos!"
+msgstr ""
+
+msgid "Parabéns!"
+msgstr ""
+
+msgid "Você completou o formulário de validação com sucesso!"
+msgstr ""
+
+msgid "📥 Baixar Relatório PDF"
+msgstr ""
+
+msgid "✨ Novo Relatório"
+msgstr ""
+
+msgid "Formulário de Validação da Entrega – QA/Engenharia de Testes"
+msgstr ""
+
+msgid "Data da Avaliação"
+msgstr ""
+
+msgid "Conformidade com o Design UX/UI"
+msgstr ""
+
+msgid "Funcionalidade e Comportamento"
+msgstr ""
+
+msgid "Qualidade do Código e Testabilidade"
+msgstr ""
+
+msgid "Validações Extras"
+msgstr ""
+
+msgid "Critério"
+msgstr ""
+
+msgid "Sim"
+msgstr ""
+
+msgid "Não"
+msgstr ""
+
+msgid "Observações"
+msgstr ""
+
+msgid "Feedback Geral"
+msgstr ""
+
+msgid "Pontos Positivos: {}"
+msgstr ""
+
+msgid "Pontos de Melhoria: {}"
+msgstr ""
+
+msgid "Aprovado"
+msgstr ""
+
+msgid "Reprovado – Necessita Ajustes"
+msgstr ""
+
+msgid "Aprovação Final: ☑ {}"
+msgstr ""
+
+msgid "Assinatura do QA/Engenheiro de Testes: {}"
+msgstr "" 
