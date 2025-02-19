@@ -28,13 +28,13 @@ msgid "Etapa {}/7"
 msgstr "Stage {}/7"
 
 msgid "Nome do Avaliador"
-msgstr "Evaluator’s Name"
+msgstr "Evaluator's Name"
 
 msgid "Nome do avaliador"
-msgstr "Evaluator’s name"
+msgstr "Evaluator's name"
 
 msgid "Nome do Engenheiro"
-msgstr "Engineer’s Name"
+msgstr "Engineer's Name"
 
 msgid "Nome do engenheiro responsável pela entrega"
 msgstr "Name of the engineer responsible for the delivery"
@@ -63,38 +63,77 @@ msgstr "Basic Information"
 msgid "Próximo"
 msgstr "Next"
 
+msgid "Anterior"
+msgstr "Previous"
+
 msgid "Por favor, preencha todos os campos!"
 msgstr "Please fill in all the fields!"
-
-msgid "Parabéns!"
-msgstr "Congratulations!"
-
-msgid "Você completou o formulário de validação com sucesso!"
-msgstr "You have successfully completed the validation form!"
-
-msgid "📥 Baixar Relatório PDF"
-msgstr "📥 Download PDF Report"
-
-msgid "✨ Novo Relatório"
-msgstr "✨ New Report"
-
-msgid "Formulário de Validação da Entrega – QA/Engenharia de Testes"
-msgstr "Delivery Validation Form - QA/Test Engineering"
-
-msgid "Data da Avaliação"
-msgstr "Evaluation Date"
 
 msgid "Conformidade com o Design UX/UI"
 msgstr "Compliance with UX/UI Design"
 
+msgid "A entrega está 100% alinhada ao protótipo/UI design (Figma, Zeplin, etc)?"
+msgstr "Is the delivery 100% aligned with the prototype/UI design (Figma, Zeplin, etc)?"
+
+msgid "As cores, fontes, ícones e espaçamentos seguem o guia de estilo da empresa?"
+msgstr "Do colors, fonts, icons, and spacing follow the company's style guide?"
+
+msgid "Componentes reutilizáveis e padrões de design foram respeitados?"
+msgstr "Were reusable components and design patterns respected?"
+
+msgid "Experiência do usuário (UX) é fluida e sem pontos de atrito?"
+msgstr "Is the user experience (UX) fluid and without friction points?"
+
+msgid "Transições, animações e interações estão implementadas conforme especificado?"
+msgstr "Are transitions, animations, and interactions implemented as specified?"
+
+msgid "Por favor, responda se a entrega está alinhada ao protótipo!"
+msgstr "Please answer if the delivery is aligned with the prototype!"
+
 msgid "Funcionalidade e Comportamento"
 msgstr "Functionality and Behavior"
+
+msgid "Todos os fluxos funcionam conforme esperado e especificado no UX?"
+msgstr "Do all flows work as expected and specified in the UX?"
+
+msgid "Campos de formulário, botões e interações respondem corretamente?"
+msgstr "Do form fields, buttons, and interactions respond correctly?"
+
+msgid "Tratamento de erros e mensagens de validação estão implementados e alinhados ao design?"
+msgstr "Are error handling and validation messages implemented and aligned with the design?"
+
+msgid "Comportamento responsivo (mobile, tablet, desktop) foi validado?"
+msgstr "Was responsive behavior (mobile, tablet, desktop) validated?"
+
+msgid "Funcionalidade foi testada em diferentes navegadores e sistemas operacionais?"
+msgstr "Was the functionality tested across different browsers and operating systems?"
 
 msgid "Qualidade do Código e Testabilidade"
 msgstr "Code Quality and Testability"
 
+msgid "Código segue os padrões internos e boas práticas de desenvolvimento?"
+msgstr "Does the code follow internal standards and development best practices?"
+
+msgid "Há cobertura de testes unitários e de integração para as principais partes da funcionalidade?"
+msgstr "Is there unit and integration test coverage for the main parts of the functionality?"
+
+msgid "Casos de teste automatizados foram implementados ou documentados?"
+msgstr "Were automated test cases implemented or documented?"
+
+msgid "A entrega está devidamente versionada e integrada com o repositório?"
+msgstr "Is the delivery properly versioned and integrated with the repository?"
+
 msgid "Validações Extras"
 msgstr "Extra Validations"
+
+msgid "Acessibilidade foi considerada (uso de leitores de tela, contraste adequado, navegação por teclado)?"
+msgstr "Was accessibility considered (screen reader usage, adequate contrast, keyboard navigation)?"
+
+msgid "Performance da interface e tempo de carregamento estão aceitáveis?"
+msgstr "Are interface performance and loading times acceptable?"
+
+msgid "Não foram identificados bugs visuais ou funcionais críticos?"
+msgstr "Were no critical visual or functional bugs identified?"
 
 msgid "Critério"
 msgstr "Criterion"
@@ -111,21 +150,56 @@ msgstr "Comments"
 msgid "Feedback Geral"
 msgstr "General Feedback"
 
-msgid "Pontos Positivos: {}"
-msgstr "Positive Points: {}"
+msgid "Pontos Positivos:"
+msgstr "Positive Points:"
 
-msgid "Pontos de Melhoria: {}"
-msgstr "Areas for Improvement: {}"
+msgid "Liste os pontos positivos identificados"
+msgstr "List the identified positive points"
+
+msgid "Pontos de Melhoria:"
+msgstr "Areas for Improvement:"
+
+msgid "Liste os pontos que precisam ser melhorados"
+msgstr "List the points that need improvement"
+
+msgid "Aprovação Final"
+msgstr "Final Approval"
 
 msgid "Aprovado"
 msgstr "Approved"
 
-msgid "Reprovado – Necessita Ajustes"
+msgid "Reprovado - Necessita Ajustes"
 msgstr "Failed - Needs Adjustments"
 
-msgid "Aprovação Final: ☑ {}"
-msgstr "Final Approval: ☑ {}"
+msgid "Por favor, selecione apenas uma opção de aprovação"
+msgstr "Please select only one approval option"
 
-msgid "Assinatura do QA/Engenheiro de Testes: {}"
-msgstr "QA/Test Engineer Signature: {}"
- 
+msgid "Por favor, selecione a aprovação final!"
+msgstr "Please select the final approval!"
+
+msgid "Avaliação Concluída"
+msgstr "Evaluation Completed"
+
+msgid "Agradecemos por completar a avaliação!"
+msgstr "Thank you for completing the evaluation!"
+
+msgid "Seu feedback é muito importante para nós."
+msgstr "Your feedback is very important to us."
+
+msgid "Gerar novo relatório"
+msgstr "Generate new report"
+
+msgid "Baixar Relatório"
+msgstr "Download Report"
+
+msgid "Aprovação Final: {}"
+msgstr "Final Approval: {}"
+
+msgid "QA/Engenheiro de Testes"
+msgstr "QA/Test Engineer"
+
+msgid "Formulário de Validação da Entrega – QA/Engenharia de Testes"
+msgstr "Delivery Validation Form - QA/Test Engineering"
+
+msgid "Data da Avaliação"
+msgstr "Evaluation Date" 
