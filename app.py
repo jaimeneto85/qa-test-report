@@ -43,11 +43,11 @@ class QAFormUI:
 
     def _collect_basic_info(self):
         st.session_state.form_data['data_avaliacao'] = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-        st.session_state.form_data['nome_avaliador'] = st.text_input("Nome do Avaliador")
-        st.session_state.form_data['nome_engenheiro'] = st.text_input("Nome do Engenheiro")
-        st.session_state.form_data['funcionalidade'] = st.text_input("Funcionalidade/Entrega")
-        st.session_state.form_data['versao'] = st.text_input("Versão do Produto")
-        st.session_state.form_data['id_tarefa'] = st.text_input("Identificação da Tarefa")
+        st.session_state.form_data['nome_avaliador'] = st.text_input("Nome do Avaliador", placeholder="Nome do avaliador")
+        st.session_state.form_data['nome_engenheiro'] = st.text_input("Nome do Engenheiro", placeholder="Nome do engenheiro responsável pela entrega")
+        st.session_state.form_data['funcionalidade'] = st.text_input("Funcionalidade/Entrega", placeholder="Qual funcionalidade ou entrega foi validada?")
+        st.session_state.form_data['versao'] = st.text_input("Versão do Produto", placeholder="Versão do produto no pacote ou do release a ser lançado")
+        st.session_state.form_data['id_tarefa'] = st.text_input("Identificação da Tarefa", placeholder="ID da Tarefa")
 
     def _validate_basic_info(self):
         return all([
@@ -184,7 +184,7 @@ class QAFormUI:
                 st.session_state.form_data['aprovacao'] = st.checkbox("Aprovado")
             with col2:
                 if not st.session_state.form_data.get('aprovacao'):
-                    st.write("Status: Reprovado – Necessita Ajustes")
+                    st.write(" ")
             
             col1, col2 = st.columns([1, 4])
             with col1:
