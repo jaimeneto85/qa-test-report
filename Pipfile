@@ -8,6 +8,7 @@ streamlit = "*"
 python-docx = "*"
 docx2pdf = "*"
 reportlab = "*"
+watchdog = "*"
 
 [dev-packages]
 

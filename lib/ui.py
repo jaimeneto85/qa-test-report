@@ -447,15 +447,24 @@ class QAFormUI:
                         st.error(_("Por favor, selecione a aprovação final!"))
 
     def _render_success(self):
-        st.header(_("Avaliação Concluída"))
-        st.write(_("Agradecemos por completar a avaliação!"))
-        st.write(_("Seu feedback é muito importante para nós."))
+        st.balloons() 
+        
+        st.markdown("""
+            <div style='text-align: center; padding: 2rem;'>
+                <h1>🎉 {} 🎉</h1>
+                <h2>✨ {} ✨</h2>
+                <p style='font-size: 1.2rem;'>🌟 {} 🌟</p>
+            </div>
+        """.format(
+            _("Avaliação Concluída com Sucesso!"),
+            _("Excelente trabalho!"),
+            _("Seu feedback é muito importante para melhorarmos nossos processos.")
+        ), unsafe_allow_html=True)
 
         self.generate_report()
 
         with st.form("success_form"):
-            if st.form_submit_button(_("Gerar novo relatório")):
-                st.session_state.form_data = {}
+            if st.form_submit_button(_("Iniciar Nova Avaliação ✨"), type="primary"):
                 st.session_state.form_data = {}
                 st.session_state.page = 1
 

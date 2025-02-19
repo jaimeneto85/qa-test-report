@@ -202,4 +202,16 @@ msgid "Formulário de Validação da Entrega – QA/Engenharia de Testes"
 msgstr "Delivery Validation Form - QA/Test Engineering"
 
 msgid "Data da Avaliação"
-msgstr "Evaluation Date" 
+msgstr "Evaluation Date"
+
+msgid "Avaliação Concluída com Sucesso!"
+msgstr "Evaluation Successfully Completed!"
+
+msgid "Excelente trabalho!"
+msgstr "Excellent work!"
+
+msgid "Seu feedback é muito importante para melhorarmos nossos processos."
+msgstr "Your feedback is very important to improve our processes."
+
+msgid "Iniciar Nova Avaliação ✨"
+msgstr "Start New Evaluation ✨" 
