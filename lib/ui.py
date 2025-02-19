@@ -13,16 +13,15 @@ def initialize_session_state():
         st.session_state.form_data = {}
     if 'language' not in st.session_state:
         st.session_state.language = 'pt_BR'
+    if 'should_update_language' not in st.session_state:
+        st.session_state.should_update_language = False
+        set_language('pt_BR')
 
-def handle_language_change():
-    current_lang = st.session_state.get('language_selector', st.session_state.get('language', 'pt_BR'))
-    
-    if current_lang != st.session_state.get('language'):
-        st.session_state.language = current_lang
-        set_language(current_lang)
-        st.rerun()
-    else:
-        set_language(current_lang)
+def on_language_change():
+    new_lang = st.session_state.language_selector
+    if new_lang != st.session_state.language:
+        st.session_state.language = new_lang
+        st.session_state.should_update_language = True
 
 class QAFormUI:
     def __init__(self):
@@ -34,8 +33,11 @@ class QAFormUI:
         os.makedirs(self.reports_dir, exist_ok=True)
 
     def render(self):
-        handle_language_change()
-        
+        if st.session_state.should_update_language:
+            set_language(st.session_state.language)
+            st.session_state.should_update_language = False
+            st.rerun()
+            
         self._render_language_selector()
         self._render_header()
         
@@ -61,12 +63,13 @@ class QAFormUI:
                 'pt_BR': 'Português (Brasil)',
                 'en_US': 'English (US)'
             }
-            selected_lang = st.selectbox(
+            st.selectbox(
                 _("Language/Idioma"),
                 options=list(language_options.keys()),
                 format_func=lambda x: language_options[x],
                 index=0 if st.session_state.language == 'pt_BR' else 1,
-                key='language_selector'
+                key='language_selector',
+                on_change=on_language_change
             )
 
     def _render_header(self):

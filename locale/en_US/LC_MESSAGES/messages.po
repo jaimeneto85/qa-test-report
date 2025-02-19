@@ -128,3 +128,4 @@ msgstr "Final Approval: ☑ {}"
 
 msgid "Assinatura do QA/Engenheiro de Testes: {}"
 msgstr "QA/Test Engineer Signature: {}"
+ 
